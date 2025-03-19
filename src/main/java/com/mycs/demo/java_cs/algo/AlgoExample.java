@@ -42,9 +42,11 @@ public class AlgoExample {
 
     // 주어진 정수 배열을 오름차순으로 정렬
     public int[] test3(int[] test){
-        List<Integer> list = Arrays.stream(test).boxed().collect(Collectors.toList());
-        Collections.sort(list);
-
-        return list.stream().mapToInt(Integer::intValue).toArray();
+//        List<Integer> list = Arrays.stream(test).boxed().collect(Collectors.toList());
+//        Collections.sort(list);
+//
+//        return list.stream().mapToInt(Integer::intValue).toArray();
+        Arrays.sort(test);
+        return test;
     }
 }

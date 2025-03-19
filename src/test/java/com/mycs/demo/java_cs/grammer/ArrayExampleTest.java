@@ -10,4 +10,12 @@ class ArrayExampleTest {
         ArrayExample arrayExample = new ArrayExample();
         arrayExample.printOrder();
     }
+
+    @Test
+    void printReverseOrder(){
+        ArrayExample arrayExample = new ArrayExample();
+        arrayExample.printReverseOrder();;
+    }
+
+
 }

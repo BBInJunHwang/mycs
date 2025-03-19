@@ -17,8 +17,9 @@ public class ArrayListExample {
     }
 
     public void reverseOrderPrint(){
+        list.sort(Collections.reverseOrder());
         //list.sort(Comparator.reverseOrder());
-        Collections.sort(list, Comparator.reverseOrder());
+        //Collections.sort(list, Comparator.reverseOrder());
         list.forEach(System.out::println);
     }
 }
